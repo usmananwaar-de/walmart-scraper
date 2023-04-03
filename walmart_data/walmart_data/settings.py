@@ -19,9 +19,7 @@ NEWSPIDER_MODULE = "walmart_data.spiders"
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
-SCRAPEOPS_API_KEY = (
-    "Your SCRAPEOPS_API_KEY"  # Replace "Your ScrapeOPS_API_KEY" with ScrapeOPS_API_KEY
-)
+SCRAPEOPS_API_KEY = "Your ScrapeOPS_API_KEY"  # Replace "Your ScrapeOPS_API_KEY" with ScrapeOPS_API_KEY
 SCRAPEOPS_PROXY_ENABLED = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
