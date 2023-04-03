@@ -42,3 +42,6 @@ scrapy crawl walmart
 <ul>
   <li>Walmart.com may block your scraper, so it's important to use a proxy service like ScrapeOps to avoid this</li>
 </ul>
+
+<h2>Get Data From AWS S3 to Power BI</h2>
+I found [ZappySys article](https://zappysys.com/blog/read-amazon-s3-data-power-bi-aws-json-xml-api/#Introduction "Go to the article") about importing data from AWS S3 to Power BI. Follow the instructions and import the scraped file to Power BI
