@@ -1,0 +1,5 @@
+json
+urllib
+scrapy
+botocore
+scrapeops-scrapy-proxy-sdk
