@@ -66,3 +66,5 @@ scrapy crawl walmart
   <li>Make sure you've boto3 install. That's all, csv file will be successfully imported
 </ul>
 </p>
+<h2>Data Visualization By Power BI Report</h2>
+<img src="/powerbi report SS">
