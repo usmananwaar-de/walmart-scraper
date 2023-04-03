@@ -67,4 +67,4 @@ scrapy crawl walmart
 </ul>
 </p>
 <h2>Data Visualization By Power BI Report</h2>
-<img src="/powerbi report SS">
+<img src="powerbi report SS">
