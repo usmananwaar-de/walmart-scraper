@@ -67,4 +67,7 @@ scrapy crawl walmart
 </ul>
 </p>
 <h2>Data Visualization By Power BI Report</h2>
+<p>To dive into the interactive world of this Power BI report, simply download the "Walmart report.pbix" file and unleash the power of data visualization with Power BI. </p>
 <img src="powerbi report SS.png">
+<br>
+Thank you for reading till the end!
