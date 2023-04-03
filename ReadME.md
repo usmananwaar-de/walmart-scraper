@@ -44,4 +44,25 @@ scrapy crawl walmart
 </ul>
 
 <h2>Get Data From AWS S3 to Power BI</h2>
-<p>I found <a href="https://zappysys.com/blog/read-amazon-s3-data-power-bi-aws-json-xml-api/#Introduction">ZappySys article</a> about importing data from AWS S3 to Power BI. Follow the instructions and import the scraped file to Power BI</p>
+<p>
+<ul>
+  <li>Open Power BI Desktop and Click on <b>Get Data</b>. Search for Python Script and copy and paste the following code:
+    <code>
+    import boto3
+
+    AWS_ACCESS_KEY = "your-aws-access-key"
+    AWS_SECRET_ACCESS_KEY = "your-aws-secret-access-key"
+    AWS_DEFAULT_REGION = "your-aws-region"
+
+    s3 = boto3.resource('s3')
+    bucket = s3.Bucket('your-bucket-name/file.csv')
+
+    for obj in bucket.objects.all():
+      key = obj.key
+      body = obj.get()['Body'].read()
+    </code>
+
+  </li>
+  <li>Make sure you've boto3 install. That's all, csv file will be successfully imported
+</ul>
+</p>
