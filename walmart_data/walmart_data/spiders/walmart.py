@@ -88,17 +88,23 @@ class WalmartSpider(scrapy.Spider):
             p_name = raw_product_data.get("name")
             yield {
                 "Date": datetime.today().strftime("%m-%d-%Y"),
-                "City Name": "New York",
-                "Country Name": "USA",
-                "Product Name": p_name,
-                "Price": raw_product_data["priceInfo"]["currentPrice"].get(
-                    "priceDisplay"
+                "Unique id": raw_product_data.get("id"),
+                "City Name": raw_product_data["location"].get("city"),
+                "State/Province": raw_product_data["location"].get(
+                    "stateOrProvinceCode"
                 ),
+                "Product Link": response.url,
+                "Product Name": p_name,
+                "Product Type": raw_product_data.get("type"),
+                "Brand": raw_product_data.get("brand"),
+                "Price": raw_product_data["priceInfo"]["currentPrice"].get("price"),
+                "Number of Reviews": raw_product_data.get("numberOfReviews"),
+                "Average Rating": raw_product_data.get("averageRating"),
                 "Available Packing": p_name.split(",")[1] if "," in p_name else p_name,
                 "Price/Unit": raw_product_data["priceInfo"]["unitPrice"].get(
                     "priceString"
                 )
                 if raw_product_data["priceInfo"]["unitPrice"] is not None
                 else "-",
-                "Product Link": response.url,
+                "Return": raw_product_data["returnPolicy"].get("returnable"),
             }
