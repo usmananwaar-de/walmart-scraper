@@ -60,9 +60,9 @@ scrapy crawl walmart
     for obj in bucket.objects.all():
       key = obj.key
       body = obj.get()['Body'].read()
-    </code>
 
-  </li>
+</code></li>
+
   <li>Make sure you've boto3 install. That's all, csv file will be successfully imported
 </ul>
 </p>
