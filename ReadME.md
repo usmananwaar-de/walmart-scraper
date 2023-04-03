@@ -14,7 +14,7 @@
   <li>Clone the repository using bash:
 
 ```bash
-git clone https://github.com/usmananwaar-de/Walmart-Scraper
+git clone hhttps://github.com/usmananwaar-de/walmart-scraper
 ```
 
   </li>
